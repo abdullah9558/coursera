@@ -3,6 +3,12 @@ body{
     background-color: aquamarine;
 }
 
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .main{
     position: absolute;
     display:flex;
@@ -11,6 +17,8 @@ body{
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: -170px;
+    margin-left: 20px;
 }
 
 .main div{
@@ -53,8 +61,13 @@ body{
 }
 
 .main div p {
-    
-   margin-top: 40px;
+   margin-top: 45px;
+   font-size: large;
+}
+
+.main div div p{
+    margin-top: 10px;
+    font-size: larger;
 }
 
 .main div:nth-child(1) div{
