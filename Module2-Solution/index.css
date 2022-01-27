@@ -1,0 +1,102 @@
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: aquamarine;
+}
+
+.main{
+    position: absolute;
+    display:flex;
+    width: 95%;
+    height: 94.5%;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main div{
+    background-color: gray;
+    border: 2px solid black;
+    flex:1;
+    min-width: 300px;
+    height: 20%;
+     margin: 10px;
+    position: relative;
+    word-break: break-word;
+    box-sizing: border-box;
+    display: inline-block;   
+}
+
+.main div:nth-child(1){
+    background-color: rgb(0, 255, 0, 0.5);
+
+}
+
+.main div:nth-child(2){
+    background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+.main div:nth-child(3){
+    background-color: rgba(4, 0, 255, 0.5);
+
+}
+
+.main div div {
+    right: -12px;
+    top: -12px;
+    height: 40px;
+    position: absolute;
+    background-color: red;
+    border: 2px solid black;
+    width: 100px;
+    text-align: center;
+}
+
+.main div p {
+    
+   margin-top: 40px;
+}
+
+.main div:nth-child(1) div{
+    background-color: rgba(255, 0, 0, 0.637);
+}
+
+.main div:nth-child(2) div{
+    background-color: rgba(0, 0, 255, 0.63);
+}
+
+.main div:nth-child(3) div{
+    background-color: rgba(0, 128, 0, 0.637);
+}
+
+@media only screen and (max-width: 1268px){
+    body {
+        background-color: rgb(255, 0, 0, 0.5);
+    }
+    .main div:nth-child(3){
+        width: 825px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    body {
+        background-color: rgba(4, 0, 255, 0.5);
+        
+      }
+    .main div {
+        width: 40%;
+    }
+    .main div:nth-child(3){
+        width:82.5%;
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    body {
+        background-color: rgb(154, 205, 50, 0.5);
+    }
+    .main div:nth-child(3){
+        width: 400px;
+    }
+}
